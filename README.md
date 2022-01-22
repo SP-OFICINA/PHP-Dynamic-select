@@ -5,7 +5,7 @@ SGBD: MySQL
 
 Tecnologia: HTML, CSS, PHP, jQuery e Ajax
 
-BD: bd_portugal.sql (Distritos, Concelhos e Fregfuesias de Portugal)
+BD: bd_portugal.sql (Distritos, Concelhos e Freguesias de Portugal)
 ![BD_portugal_Modelo_Relacional](https://user-images.githubusercontent.com/97760074/150655615-0321c745-a568-4e6f-93de-8d607a2b40b7.png)
 
 
