@@ -68,18 +68,18 @@
 <!-- jQuery FUNCTIONS -->
 <!-- CHANGE DISTRITO -->
 <script type="text/javascript">
-	// Iniciar a função jQuery para carregar o conteudo de todas as funções após a página ser carregada completamente
+	// Iniciar a funcao jQuery para carregar o conteudo de todas as funcoes apos a pagina ser carregada completamente
 	$(document).ready(function(){
-		// função jQuery change para obter o valor do campo de entrada (após ser alterado) 
+		// funcao jQuery change para obter o valor do campo de entrada (apos ser alterado) 
 		$('#distrito').change(function(){
 			// Armazenar o valor de entrada selecionado em distrito (id_distrito)
 			var id_distrito = $(this).val();
-			// Iniciar Ajax para obter os dados que pertencem a um id_distrito específico
+			// Iniciar Ajax para obter os dados que pertencem a um id_distrito especifico
 			$.ajax({
 				url: "fetch_concelho.php",			// Caminho para o ficheiro PHP que procura os concelhos na BD
 				method: "POST",						// Metodo POST
 				data: {id_distrito:id_distrito},	// Dados enviados no pedido ao servidor
-				success:function(data)				// Se pedido ao servidor obtiver resposta esta função é executada
+				success:function(data)				// Se pedido ao servidor obtiver resposta esta funï¿½ï¿½o ï¿½ executada
 				{
 					// console.log(data);			// TESTE para exibir resposta recebida do servidor (concelhos obtidos na resposta)
 					$('#concelho').html(data);		// Exibir os Concelhos na tag #concelho
